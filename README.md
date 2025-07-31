@@ -1,1 +1,1 @@
-# code_and_cognition Complete Source Code
+# code and cognition Complete Source Code
