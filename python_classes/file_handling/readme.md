@@ -172,13 +172,14 @@ with open("scores.txt", "r") as f:
 ```
 
 #### ✅ Quick Recap
-Use open(filename, mode) for file operations
 
-Prefer with open(...) to manage file lifecycle
+- Use open(filename, mode) for file operations
 
-Understand text vs binary modes
+- Prefer with open(...) to manage file lifecycle
 
-Handle exceptions using try-except
+- Understand text vs binary modes
 
-Real-world usage includes logs, configs, and storage
+- Handle exceptions using try-except
+
+- Real-world usage includes logs, configs, and storage
 

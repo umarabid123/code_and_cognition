@@ -109,14 +109,14 @@ Use .get() to avoid KeyError
 - Avoid using mutable data types as keys
 
 #### ✅ Quick Recap
-Dictionaries are powerful, flexible, and easy to use
+- Dictionaries are powerful, flexible, and easy to use
 
-Allow fast data lookup via keys
+- Allow fast data lookup via keys
 
-Support a variety of built-in methods
+- Support a variety of built-in methods
 
-Useful in many real-world applications: configuration files, caches, APIs, etc.
+- Useful in many real-world applications: configuration files, caches, APIs, etc.
 
 #### 🧩 Activity/Challenge
 - Create a dictionary that tracks stock quantities and prices for 5 products.
-Allow the user to input a product and return its price and quantity.
+- Allow the user to input a product and return its price and quantity.
