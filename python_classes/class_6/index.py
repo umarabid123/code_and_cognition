@@ -1,54 +1,46 @@
-# Function to greet everyone
-def greet():
-    print("Hello EveryOne")
-    print("Hello Uziar")
-    print("Hello Maten")
-    print("Hello Uziar")
+# A recursive function to find factorial of a number
+# For example, factorial of 4 is: 4 * 3 * 2 * 1 = 24
 
-# Calling the greet function to run the code inside it
-greet()
+def fact(n):
+    if n == 0 or n == 1:  # Base case
+        return 1
+    else:
+        return n * fact(n - 1)   # Recursive call
 
+# Call the function with input 4
 
-# Simple variable assignment
-num5 = 56
-print("num5", num5)
+res = fact(4)
+print("res: ", res)
 
-
-# Function with parameters and default values
-# num2 and num3 have default values (5 and 30)
-def sum(num1, num2=5, num3=30):
-    res = num1 + num2 + num3  
-    return res             
-
-
-# This line will give error because "res" is not defined yet
-print("res", res)
-
-# Correct usage after calling the function
-num4 = 50
-
-# Calling the sum function with 2 arguments (num1=50, num2=30)
-# num3 will take the default value 30
-res = sum(num4, 30)
-print('res: ', res)
+# Explanation of how recursion works step by step:
+# fact(4)
+# => 4 * fact(3)
+# => 4 * 3 * fact(2)
+# => 4 * 3 * 2 * fact(1)
+# => 4 * 3 * 2 * 1 = 24
 
 
-# List of numbers
-list_data = [10, 220, 40, 50]
 
-# Function to print each item in the list
-def print_list(list):
-    for item in list:               
-        print("item", item)
+# Recursion Example: Sum of Natural Numbers
 
-# Call the function to print list items
-print_list(list_data)
+# A recursive function to find sum of numbers from n to 1
+# For example, sum(3) = 3 + 2 + 1 = 6
+
+def sum(n):
+    if n == 1:              # Base case: if n is 1, return 1
+        return 1
+    else:
+        return n + sum(n - 1)   # Recursive call
+
+# Call the function
+print(sum(20))  
 
 
-# Another function to calculate the sum using sum() function
-def cal():
-    sumRes = sum(20, 30, 40)  
-    print("sumRes", sumRes)
 
-# Call the cal function
-cal()
+
+# Explanation of how recursion works step by step:
+# sum(20)
+# => 20 + sum(19)
+# => 20 + 19 + sum(18)
+# => 20 + 19 + 18 + ... + 1
+# => Final result: 210
