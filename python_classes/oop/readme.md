@@ -134,3 +134,67 @@ book1.book_info()
 book2.book_info()
 
 
+
+📘 Classes and Objects in Python
+🎯 Learning Objectives
+By the end of this session, you will be able to:
+
+Understand what classes and objects are
+
+Differentiate between blueprint (class) and instance (object)
+
+Relate OOP to real-world examples
+
+Identify use cases for classes and objects
+
+1️⃣ What is a Class?
+A class is a blueprint or template for creating objects.
+
+It defines:
+
+Attributes → data or properties
+
+Methods → actions or behaviors
+
+💡 Analogy:
+Class = "House blueprint"
+It describes how the house will look, but it’s not an actual house yet.
+
+2️⃣ What is an Object?
+An object is an instance of a class.
+
+Every object created from a class has:
+
+Its own attribute values
+
+Access to the same methods defined in the class
+
+💡 Analogy:
+Object = "A real house built from the blueprint"
+You can have many houses from the same blueprint, but each may have different paint colors, furniture, etc.
+
+3️⃣ How They Work Together
+Define a class → acts like a recipe
+
+Create objects → actual dishes made using that recipe
+
+4️⃣ Python Example
+python
+Copy
+Edit
+# Defining a class
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand  # Attribute
+        self.model = model  # Attribute
+
+    def drive(self):  # Method
+        print(f"{self.brand} {self.model} is driving.")
+
+# Creating objects (instances)
+car1 = Car("Tesla", "Model S")
+car2 = Car("Toyota", "Corolla")
+
+# Using objects
+car1.drive()  # Output: Tesla Model S is driving.
+car2.drive()  # Output: Toyota Corolla is driving.
